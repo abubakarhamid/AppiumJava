@@ -1,32 +1,65 @@
 
-Pre-requisites:
-  - Node Must be installed
-  - Java 17 must be installed
-  - Appium 2 Must be installed
-  - JAVA_HOME environment variable should be set
+# Project Documentation
 
-Steps to execute script:
-  - Right click on testng.xml file you want to execute
-  - Wait for full execution
-  - After execution is completed, open /reports/ExtentReport.html on Chrome browser to view results
+## Pre-requisites
 
+Before you can execute the scripts, make sure the following tools are installed and set up:
 
-Config Folder:
- - Consists of all the configuration of the project.
+1. **Download the APK**:  
+   - The `daraz.apk` file must be downloaded and placed in the `apps` folder. You can get the file from the [Google Drive link here](https://drive.google.com/file/d/1t0kDXCnnBZmCorNGr1_g6E6-77oSB9jW/view?usp=sharing).
+   
+2. **Install the Required Tools**:  
+   - **Node.js** (Ensure Node.js is installed on your system)  
+   - **Java 17** (Install the JDK version 17)
+   - **Appium 2** (Make sure you have Appium 2 installed)
+   
+3. **Set Environment Variables**:  
+   - The `JAVA_HOME` environment variable must be set to the Java 17 installation directory.
 
-General:
- - This folder consists of generic classes to be used in over all project.
- - envGlobals consists of all the data.
- - basicFlows consists of swipe and scroll functions.
- - GenericFunctions is for random common functions. 
- - Main call is where we create objects for the classes and call them in test class.
- 
- PageObject:
- - It consists of two folders Android and iOS.
- - Both have classes divided on the basis of screens. Like Login screen consists of locators and functions of Login Screen only.
- 
- Testcases:
- - Test case class is same for android and iOS, if else case is used to distinguish.
+---
 
- Utils:
- - consists of loghelper class, a generic clas for calling assertions and logging steps that are executed.
+## Steps to Execute the Script
+
+To run the test cases, follow these steps:
+
+1. **Execute TestNG XML File**:  
+   - Right-click on the `testng.xml` file you want to execute.
+
+2. **Wait for Execution**:  
+   - Wait for the script to complete its execution. 
+
+3. **View Test Results**:  
+   - Once execution is complete, open the file `/reports/ExtentReport.html` in your Chrome browser to view the results.
+
+---
+
+## Project Structure
+
+### `Config` Folder
+- Contains all configuration files for the project setup.
+
+### `General` Folder
+- This folder holds generic classes used throughout the project.
+  - **envGlobals**: Contains all the environment data.
+  - **basicFlows**: Includes functions for swipe and scroll operations.
+  - **GenericFunctions**: Contains random common utility functions.
+  - **Main**: The entry point where we create objects for the classes and invoke them in the test classes.
+
+### `PageObject` Folder
+- Contains two subfolders: **Android** and **iOS**, each of which includes classes specific to their respective platforms.
+  - Each screen has its own class with locators and functions, e.g., a **Login screen** class with related locators and actions.
+
+### `Testcases` Folder
+- The test case classes are designed for both **Android** and **iOS**. Conditional statements (e.g., `if-else`) are used to handle platform-specific logic.
+
+### `Utils` Folder
+- Contains helper classes, including:
+  - **LogHelper**: A class for logging the steps executed during the test.
+  - **Assertion Helper**: A generic class to handle assertions during test execution.
+
+---
+
+## Additional Notes
+
+- Make sure all necessary dependencies are installed and paths are correctly set up to ensure smooth execution.
+- The results can be viewed in the **ExtentReport.html** file after test execution.
