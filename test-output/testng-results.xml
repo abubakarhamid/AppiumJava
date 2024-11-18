@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-18T15:18:41 GMT" name="Sanity Suite" finished-at="2024-11-18T15:18:41 GMT" duration-ms="51">
+    <groups>
+    </groups>
+    <test started-at="2024-11-18T15:18:41 GMT" name="Daraz Sanity Test" finished-at="2024-11-18T15:18:41 GMT" duration-ms="51">
+      <class name="Testcases.Android.HomePageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:17:16 GMT" name="startReport" finished-at="2024-11-18T15:18:41 GMT" duration-ms="85424" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at General.webDriverFactory.startDriver(webDriverFactory.java:37)
+at General.baseTest.startReport(baseTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="beforeTest" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifySearchButtonAppear()[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="verifySearchButtonAppear" description="verify the Search Button appear on top" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at General.webDriverFactory.startDriver(webDriverFactory.java:37)
+at General.baseTest.startReport(baseTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchButtonAppear -->
+        <test-method is-config="true" signature="QuitDriver(org.testng.ITestResult)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="QuitDriver" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="beforeTest" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyHomePageBannerAppear()[pri:1, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="verifyHomePageBannerAppear" description="verify the Home Page Banner appear" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at General.webDriverFactory.startDriver(webDriverFactory.java:37)
+at General.baseTest.startReport(baseTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageBannerAppear -->
+        <test-method is-config="true" signature="QuitDriver(org.testng.ITestResult)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="QuitDriver" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+        <test-method is-config="true" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="beforeTest" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyLoginAppear()[pri:2, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="verifyLoginAppear" description="verify the Login banner appear on home" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at General.webDriverFactory.startDriver(webDriverFactory.java:37)
+at General.baseTest.startReport(baseTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAppear -->
+        <test-method is-config="true" signature="QuitDriver(org.testng.ITestResult)[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="QuitDriver" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:Testcases.Android.HomePageTest@6f46426d]" started-at="2024-11-18T15:18:41 GMT" name="endReport" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- Testcases.Android.HomePageTest -->
+      <class name="Testcases.Android.SettingPageTest">
+        <test-method signature="verifySettingPageTitle()[pri:0, instance:Testcases.Android.SettingPageTest@483f6d77]" started-at="2024-11-18T15:18:41 GMT" name="verifySettingPageTitle" description="verify Setting Page title" finished-at="2024-11-18T15:18:41 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Cannot start the 'com.daraz.android' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.com.alipay.wp.login.ui.activity.VnLoginActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity 
+Host info: host: 'JAMESBOND', ip: '192.168.1.67'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:noReset=true, appium:autoGrantPermissions=true, appium:deviceName=R58T31K6CCJ, platformName=ANDROID, appium:automationName=uiautomator2, appium:app=apps/daraz.apk, appium:platformVersion=14}], desiredCapabilities=Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}}]
+Capabilities {appium:app: apps/daraz.apk, appium:autoGrantPermissions: true, appium:automationName: uiautomator2, appium:deviceName: R58T31K6CCJ, appium:noReset: true, appium:platformVersion: 14, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at General.webDriverFactory.startDriver(webDriverFactory.java:37)
+at General.baseTest.startReport(baseTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySettingPageTitle -->
+      </class> <!-- Testcases.Android.SettingPageTest -->
+    </test> <!-- Daraz Sanity Test -->
+  </suite> <!-- Sanity Suite -->
+</testng-results>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Test Suites-->
+
+<suite name="Sanity Suite">
+    <test name = "Daraz Sanity Test">
+        <classes>
+            <class name="Testcases.Android.HomePageTest">
+                <methods>
+                    <include name="verifySearchButtonAppear"/>
+                    <include name="verifyHomePageBannerAppear"/>
+                    <include name="verifyLoginAppear"/>
+                </methods>
+            </class>
+            <class name="Testcases.Android.SettingPageTest">
+                <methods>
+                    <include name="verifySettingPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

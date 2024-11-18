@@ -1,0 +1,16 @@
+<Configuration>
+    <Appenders>
+        <Appender type="ReportPortalAppender" name="ReportPortal">
+            <layout type="PatternLayout" pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Appender>
+        <Appender type="Console" name="Console">
+            <layout type="PatternLayout" pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Appender>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ReportPortal"/>
+        </Root>
+    </Loggers>
+</Configuration>
