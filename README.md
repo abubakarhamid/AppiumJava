@@ -6,7 +6,7 @@
 Before you can execute the scripts, make sure the following tools are installed and set up:
 
 1. **Download the APK**:  
-   - The `daraz.apk` file must be downloaded and placed in the `apps` folder. You can get the file from the [Google Drive link here](https://drive.google.com/file/d/1t0kDXCnnBZmCorNGr1_g6E6-77oSB9jW/view?usp=sharing).
+   - The `daraz.apk` file must be downloaded and placed in the `apps` folder (create this folder in root directory). You can get the file from the [Google Drive link here](https://drive.google.com/file/d/1t0kDXCnnBZmCorNGr1_g6E6-77oSB9jW/view?usp=sharing).
    
 2. **Install the Required Tools**:  
    - **Node.js** (Ensure Node.js is installed on your system)  
